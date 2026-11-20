@@ -333,7 +333,7 @@
       return;
     }
     const { result, guaranteed } = savedSpin;
-    if (guaranteed) message.textContent = "서른 번째 약속, 단군이 찾아와요!";
+
     const steps = [10, 12, 14];
     const tracks = slots.map((slot, i) => reducedMotion.matches ? null : createStrip(i, result.symbols[i], steps[i]));
     const start = performance.now();
@@ -348,7 +348,7 @@
       document.getElementById("dangun-scene").hidden = !isDangun;
       outcomeImage.hidden = isDangun;
       outcomeImage.src = `assets/${SYMBOLS[result.matched ? result.symbols[0] : 2].id}.svg`;
-      document.getElementById("outcome-eyebrow").textContent = guaranteed ? "서른 번째 약속, 단군과의 만남" : isDangun ? "하늘의 뜻이 닿아, 새로운 이야기가 열려요" : result.matched ? "신단수 아래, 반가운 만남" : "동굴 앞에서 잠깐 쉬어 가요";
+      document.getElementById("outcome-eyebrow").textContent = isDangun ? "하늘의 뜻이 닿아, 새로운 이야기가 열려요" : result.matched ? "신단수 아래, 반가운 만남" : "동굴 앞에서 잠깐 쉬어 가요";
       document.getElementById("outcome-title").textContent = isDangun ? "단군이 나타났어요!" : result.matched ? "성공!" : "아쉽게 실패!";
       document.getElementById("outcome-description").textContent = resultMessage(result);
       outcome.showModal();

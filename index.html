@@ -39,7 +39,7 @@
     <div class="controls">
       <button id="spin-button" type="button">돌리기</button>
       <p id="result-message" role="status" aria-live="polite" aria-atomic="true">어떤 이야기가 기다리고 있을까요?</p>
-      <div class="pity-meter">
+      <div class="pity-meter" hidden>
         <p id="pity-status">단군 천장까지 30회</p>
         <progress id="pity-progress" value="0" max="30" aria-label="단군 천장 누적 횟수"></progress>
         <p id="storage-note">이 브라우저에 횟수를 저장해요.</p>
@@ -51,13 +51,13 @@
     <aside class="probabilities" aria-labelledby="probability-title">
       <p class="eyebrow">작은 확률 안내</p>
       <h2 id="probability-title">그림이 모일 확률</h2>
-      <p class="probability-caption">일반 회전 기준 · 천장 제외</p>
+      <p class="probability-caption">일반 회전 기준</p>
       <ul id="probability-list"></ul>
       <dl class="probability-summary">
         <div><dt>일반 회전 성공</dt><dd id="match-probability"></dd></div>
         <div><dt>불일치</dt><dd id="miss-probability"></dd></div>
       </dl>
-      <p class="probability-note">일반 회전의 단군 확률은 <strong id="dangun-probability"></strong>예요.<br>단군 없이 29회 → 30번째 확정!<br>단군이 나오면 횟수가 초기화돼요.</p>
+      <p class="probability-note">일반 회전의 단군 확률은 <strong id="dangun-probability"></strong>예요.</p>
     </aside>
   </main>
   <dialog id="outcome" aria-labelledby="outcome-title" aria-describedby="outcome-description">
