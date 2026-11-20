@@ -1,0 +1,214 @@
+:root {
+  color-scheme: light;
+  font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  color: #594737;
+  background: #f4eddf;
+  font-synthesis: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 280px;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 40px 20px;
+}
+
+.game {
+  width: min(100%, 900px);
+  display: grid;
+  grid-template-columns: minmax(0, 620px) 224px;
+  align-items: center;
+  gap: 36px;
+  text-align: center;
+}
+.game-main { min-width: 0; }
+.probabilities { padding: 22px 18px; border: 1px solid #c6b69b; border-radius: 15px; background: #f9f3e7; text-align: left; }
+.probabilities .eyebrow { font-size: 11px; letter-spacing: .08em; }
+.probabilities h2 { margin: 0; font-family: "Batang", "AppleMyungjo", serif; font-size: 20px; }
+.probability-caption { margin: 10px 0 16px; color: #7c6e59; font-size: 11px; }
+#probability-list { margin: 0; padding: 0; list-style: none; }
+#probability-list li { display: flex; align-items: center; gap: 8px; padding: 7px 0; font-size: 13px; }
+#probability-list img { width: 30px; height: 30px; }
+#probability-list strong { margin-left: auto; font-variant-numeric: tabular-nums; }
+#probability-list .dangun-rate { color: #556742; }
+.probability-summary { margin: 12px 0; padding-top: 12px; border-top: 1px solid #d7c9b3; font-size: 12px; }
+.probability-summary div { display: flex; justify-content: space-between; margin: 8px 0; }
+.probability-summary dd { margin: 0; font-variant-numeric: tabular-nums; }
+.probability-note { margin: 16px 0 0; font-size: 11px; line-height: 1.9; color: #7c6e59; }
+[hidden] { display: none !important; }
+
+.heading { margin-bottom: 10px; }
+
+.myth-landscape { display: block; width: 100%; height: auto; margin: 0 auto 18px; }
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 13px;
+  letter-spacing: .12em;
+  color: #7c6e59;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Batang", "AppleMyungjo", "Noto Serif KR", serif;
+  font-size: clamp(36px, 7vw, 48px);
+  font-weight: 700;
+  letter-spacing: .05em;
+  line-height: 1.35;
+}
+
+.introduction {
+  margin: 14px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #7c6e59;
+}
+
+.reels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(8px, 2.5vw, 16px);
+}
+
+.slot {
+  position: relative;
+  aspect-ratio: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 9% 5% 7%;
+  overflow: hidden;
+  border: 1px solid #ac9478;
+  border-radius: 15px;
+  background: #fffaf0;
+}
+
+.slot.rolling { display: block; padding: 0; }
+.reel-track { position: absolute; inset: 0; height: 100%; will-change: transform; }
+.reel-cell {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 9% 5% 7%;
+}
+.reel-cell img { flex-shrink: 0; }
+
+.slot img {
+  display: block;
+  width: 76%;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+  user-select: none;
+}
+
+.symbol-name {
+  margin-top: 4px;
+  font-size: clamp(11px, 2.5vw, 14px);
+  line-height: 1.5;
+  color: #6f5b45;
+}
+
+.controls { margin-top: 30px; }
+
+button {
+  width: min(100%, 244px);
+  min-height: 56px;
+  padding: 12px 24px;
+  border: 1px solid #62724d;
+  border-radius: 12px;
+  background: #71825b;
+  color: #fffdf5;
+  font: inherit;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background-color 120ms ease;
+}
+
+@media (hover: hover) {
+  button:hover:not(:disabled) { background: #61734d; }
+}
+
+button:active:not(:disabled) { background: #566745; }
+button:focus-visible { outline: 3px solid #594737; outline-offset: 5px; }
+button:disabled { cursor: wait; background: #909b7f; border-color: #83916e; }
+
+#result-message {
+  min-height: 3em;
+  margin: 18px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+
+.story-note { margin: 4px 0 0; color: #7c6e59; font-size: 12px; line-height: 1.8; word-break: keep-all; }
+.pity-meter { width: min(100%, 280px); margin: 0 auto 20px; }
+#pity-status { margin: 0 0 8px; font-size: 13px; color: #556742; }
+#pity-progress { display: block; width: 100%; height: 7px; border: none; border-radius: 8px; overflow: hidden; background: #e1d7c3; color: #83976a; accent-color: #83976a; }
+#pity-progress::-webkit-progress-bar { background: #e1d7c3; }
+#pity-progress::-webkit-progress-value { background: #83976a; border-radius: 8px; }
+#pity-progress::-moz-progress-bar { background: #83976a; border-radius: 8px; }
+#storage-note { margin: 8px 0 0; font-size: 11px; line-height: 1.7; color: #7c6e59; word-break: keep-all; }
+
+dialog {
+  width: min(360px, calc(100% - 40px));
+  max-height: calc(100svh - 32px);
+  padding: 0;
+  border: 1px solid #ac9478;
+  border-radius: 20px;
+  background: #fffaf0;
+  color: #594737;
+  text-align: center;
+}
+dialog::backdrop { background: rgb(65 58 43 / 30%); }
+.outcome-card { padding: 25px 20px 18px; }
+.outcome-eyebrow { margin: 0 0 8px; font-size: 12px; color: #7c6e59; letter-spacing: .05em; }
+#outcome-image { display: block; width: 128px; height: 128px; margin: 0 auto; }
+#outcome-title { margin: 8px 0 10px; font-family: "Batang", "AppleMyungjo", serif; font-size: 30px; }
+dialog[data-kind="success"] #outcome-title { color: #61734d; }
+#outcome-description { margin: 0 0 20px; font-size: 15px; line-height: 1.6; word-break: keep-all; }
+#outcome-close { min-height: 44px; width: 160px; font-size: 15px; }
+.auto-close-note { margin: 12px 0 0; font-size: 11px; color: #7c6e59; }
+
+dialog[data-kind="dangun"] { width: min(420px, calc(100% - 40px)); }
+dialog[data-kind="dangun"] #outcome-title { color: #61734d; font-size: clamp(23px, 5vw, 28px); }
+.dangun-scene { position: relative; height: 180px; margin: 12px -8px 0; overflow: hidden; }
+.scene-landscape { position: absolute; width: 100%; height: auto; left: 0; bottom: 0; }
+.scene-sun { position: absolute; width: 100px; height: 100px; border-radius: 50%; background: #eee0b7; top: 15px; left: calc(50% - 50px); }
+.scene-hero { position: absolute; width: 142px; height: 142px; left: calc(50% - 71px); bottom: 4px; }
+dialog[open][data-kind="dangun"] .scene-landscape { animation: scene-arrive 650ms ease-out both; }
+dialog[open][data-kind="dangun"] .scene-sun { animation: scene-arrive 1000ms ease-out both; }
+dialog[open][data-kind="dangun"] .scene-hero { animation: dangun-arrive 1100ms 400ms ease-out both; }
+@keyframes scene-arrive { from { opacity: 0; } to { opacity: 1; } }
+@keyframes dangun-arrive { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 760px) {
+  .game { width: min(100%, 620px); grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .probabilities { width: min(100%, 360px); justify-self: center; }
+}
+
+@media (max-width: 420px) {
+  body { padding: 28px 16px; }
+  .heading { margin-bottom: 10px; }
+  .introduction { font-size: 12px; }
+  .slot { border-radius: 11px; }
+  .controls { margin-top: 26px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button { transition: none; }
+  dialog[open][data-kind="dangun"] .dangun-scene > * { animation: none; }
+}

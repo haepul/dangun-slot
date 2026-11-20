@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <title>단군 — 전통 옷과 나뭇잎 관을 쓴 작은 단군</title>
+  <g stroke="#735b45" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M73 119C59 122 48 138 45 156L66 165L74 149L73 175H127L126 149L134 165L155 156C151 138 141 123 127 119Z" fill="#ede2c8"/>
+    <path d="M82 120L101 141L118 120M101 141L88 158M100 141L114 155"/>
+    <path d="M75 158H125V167H75Z" fill="#9aa67d" stroke="none"/>
+    <path d="M72 61C76 44 86 38 100 38C119 38 131 47 133 65L139 108H61Z" fill="#695345"/>
+    <ellipse cx="65" cy="88" rx="8" ry="10" fill="#efcfaa"/>
+    <ellipse cx="135" cy="88" rx="8" ry="10" fill="#efcfaa"/>
+    <path d="M68 65Q100 48 132 65L132 92C132 114 119 127 100 127C81 127 68 114 68 92Z" fill="#f1d5b2"/>
+    <path d="M65 64Q100 53 135 64L135 74Q100 65 65 74Z" fill="#d5bd86"/>
+    <path d="M94 56C77 56 71 44 74 33C90 33 99 42 94 56Z" fill="#8f9f71"/>
+    <path d="M104 56C101 41 111 30 124 31C125 45 120 54 104 56Z" fill="#a7b384"/>
+    <path d="M99 59L100 44" stroke="#7a845b"/>
+    <path d="M88 105Q100 114 112 105" stroke-width="2.8"/>
+  </g>
+  <g fill="#654d38"><ellipse cx="85" cy="91" rx="3" ry="4"/><ellipse cx="115" cy="91" rx="3" ry="4"/></g>
+  <g fill="#dfa993"><ellipse cx="77" cy="102" rx="6.5" ry="3.5"/><ellipse cx="123" cy="102" rx="6.5" ry="3.5"/></g>
+</svg>

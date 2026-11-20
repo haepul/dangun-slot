@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <title>곰 — 둥글고 순한 갈색 곰</title>
+  <g stroke="#70513c" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="57" cy="58" r="23" fill="#ae8059"/>
+    <circle cx="143" cy="58" r="23" fill="#ae8059"/>
+    <circle cx="57" cy="58" r="11" fill="#d5b18b" stroke="none"/>
+    <circle cx="143" cy="58" r="11" fill="#d5b18b" stroke="none"/>
+    <path d="M100 51C65 51 43 76 42 113C41 145 63 165 100 165C137 165 159 145 158 113C157 76 135 51 100 51Z" fill="#b98b63"/>
+    <ellipse cx="100" cy="133" rx="28" ry="23" fill="#e4c7a0" stroke="none"/>
+    <path d="M92 124Q100 119 108 124Q108 131 100 133Q92 131 92 124Z" fill="#634a36" stroke="none"/>
+    <path d="M100 133L100 139M100 139Q93 146 87 139M100 139Q107 146 113 139" stroke-width="2.8"/>
+  </g>
+  <g fill="#574332"><ellipse cx="76" cy="109" rx="3.4" ry="4.4"/><ellipse cx="124" cy="109" rx="3.4" ry="4.4"/></g>
+  <g fill="#ca987d"><ellipse cx="65" cy="128" rx="8" ry="4.5"/><ellipse cx="135" cy="128" rx="8" ry="4.5"/></g>
+</svg>

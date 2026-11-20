@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <title>호랑이 — 웃음 띤 전래동화 호랑이</title>
+  <g stroke="#71513b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M62 74C37 72 32 45 47 38C62 30 78 43 77 62M125 61C126 42 141 31 154 39C171 49 160 74 142 76" fill="#d9a35e"/>
+    <path d="M53 57Q51 45 62 54M139 54Q150 44 150 57" stroke="#ac7445" stroke-width="7"/>
+    <path d="M100 51C65 50 43 75 42 111C41 147 65 165 101 165C138 165 160 145 158 110C156 74 136 51 100 51Z" fill="#e4b571"/>
+    <path d="M98 54L100 76M79 58L84 72M121 58L116 72M44 96L62 102M43 116L61 119M155 96L139 102M158 116L140 119" stroke="#805a3e" stroke-width="7"/>
+    <path d="M100 128C86 113 66 120 68 138C70 154 89 156 100 146C112 156 131 153 132 138C133 120 114 113 100 128Z" fill="#f6e6c4" stroke="none"/>
+    <path d="M93 124Q100 119 107 124L101 130Q99 131 97 129Z" fill="#71513b" stroke="none"/>
+    <path d="M100 131L100 138M100 138Q92 145 86 137M100 138Q108 145 114 137" stroke-width="2.8"/>
+  </g>
+  <g fill="#614b36"><ellipse cx="77" cy="109" rx="3.4" ry="4.4"/><ellipse cx="123" cy="109" rx="3.4" ry="4.4"/></g>
+  <g fill="#cf9671"><ellipse cx="64" cy="127" rx="7" ry="4"/><ellipse cx="136" cy="127" rx="7" ry="4"/></g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <title>마늘 — 작고 둥근 통마늘</title>
+  <g stroke="#79624e" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 66C94 54 91 42 94 32L108 34C106 49 106 58 113 69" fill="#d8c994"/>
+    <path d="M92 60C87 74 67 76 51 93C35 110 34 135 48 150C59 163 79 165 99 160C119 167 142 161 152 147C164 131 159 107 145 93C131 77 115 77 109 63C103 68 98 68 92 60Z" fill="#f1e6cc"/>
+    <path d="M94 70C70 88 61 120 75 151M106 71C128 94 138 125 123 153" stroke="#b5a183"/>
+    <path d="M91 163L87 170M99 163L99 172M108 164L112 170" stroke="#b5a183"/>
+  </g>
+  <g fill="#d6b5a1"><ellipse cx="76" cy="131" rx="8" ry="4"/><ellipse cx="124" cy="131" rx="8" ry="4"/></g>
+  <g fill="#685340"><ellipse cx="86" cy="122" rx="2.8" ry="3.7"/><ellipse cx="114" cy="122" rx="2.8" ry="3.7"/></g>
+  <path d="M95 134Q100 139 105 134" stroke="#79624e" stroke-width="3" stroke-linecap="round"/>
+</svg>

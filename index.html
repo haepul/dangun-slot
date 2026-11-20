@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4eddf">
+  <meta name="description" content="쑥, 마늘, 호랑이, 곰, 단군과 함께하는 소박한 그림 슬롯 게임.">
+  <title>단군슬롯</title>
+  <link rel="icon" href="assets/mugwort.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game" aria-labelledby="game-title">
+    <div class="game-main">
+    <header class="heading">
+      <p class="eyebrow">아주 먼 옛날, 신단수 아래</p>
+      <h1 id="game-title">단군슬롯</h1>
+      <p class="introduction">쑥과 마늘을 모아, 신화 속 친구들을 만나 보세요.</p>
+    </header>
+
+    <img class="myth-landscape" src="assets/myth-landscape.svg" alt="겹겹의 산과 곰과 호랑이가 머물던 동굴, 넓게 가지를 펼친 신단수" width="620" height="132">
+
+    <div class="reels" role="group" aria-label="세 칸의 그림" aria-busy="false">
+      <div class="slot">
+        <img src="assets/mugwort.svg" alt="쑥" width="200" height="200" draggable="false">
+        <span class="symbol-name" aria-hidden="true">쑥</span>
+      </div>
+      <div class="slot">
+        <img src="assets/garlic.svg" alt="마늘" width="200" height="200" draggable="false">
+        <span class="symbol-name" aria-hidden="true">마늘</span>
+      </div>
+      <div class="slot">
+        <img src="assets/bear.svg" alt="곰" width="200" height="200" draggable="false">
+        <span class="symbol-name" aria-hidden="true">곰</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="spin-button" type="button">돌리기</button>
+      <p id="result-message" role="status" aria-live="polite" aria-atomic="true">어떤 이야기가 기다리고 있을까요?</p>
+      <div class="pity-meter">
+        <p id="pity-status">단군 천장까지 30회</p>
+        <progress id="pity-progress" value="0" max="30" aria-label="단군 천장 누적 횟수"></progress>
+        <p id="storage-note">이 브라우저에 횟수를 저장해요.</p>
+      </div>
+    </div>
+    <p class="story-note">쑥 한 줌과 마늘, 그리고 곰과 호랑이의 오랜 기다림.</p>
+    <noscript>게임을 즐기려면 브라우저에서 JavaScript를 켜 주세요.</noscript>
+    </div>
+    <aside class="probabilities" aria-labelledby="probability-title">
+      <p class="eyebrow">작은 확률 안내</p>
+      <h2 id="probability-title">그림이 모일 확률</h2>
+      <p class="probability-caption">일반 회전 기준 · 천장 제외</p>
+      <ul id="probability-list"></ul>
+      <dl class="probability-summary">
+        <div><dt>일반 회전 성공</dt><dd id="match-probability"></dd></div>
+        <div><dt>불일치</dt><dd id="miss-probability"></dd></div>
+      </dl>
+      <p class="probability-note">일반 회전의 단군 확률은 <strong id="dangun-probability"></strong>예요.<br>단군 없이 29회 → 30번째 확정!<br>단군이 나오면 횟수가 초기화돼요.</p>
+    </aside>
+  </main>
+  <dialog id="outcome" aria-labelledby="outcome-title" aria-describedby="outcome-description">
+    <div class="outcome-card">
+      <p class="outcome-eyebrow" id="outcome-eyebrow"></p>
+      <div id="dangun-scene" class="dangun-scene" aria-hidden="true" hidden>
+        <span class="scene-sun"></span>
+        <img class="scene-landscape" src="assets/myth-landscape.svg" alt="" width="620" height="132">
+        <img class="scene-hero" src="assets/dangun.svg" alt="" width="200" height="200">
+      </div>
+      <img id="outcome-image" src="assets/bear.svg" alt="" width="144" height="144">
+      <h2 id="outcome-title"></h2>
+      <p id="outcome-description"></p>
+      <button id="outcome-close" type="button" autofocus>계속하기</button>
+      <p class="auto-close-note">잠시 뒤 이야기로 돌아가요</p>
+    </div>
+  </dialog>
+</body>
+</html>
